@@ -22,6 +22,22 @@ a{
     display: inline-block;
 }
 
+ul li{
+    list-style: none;
+}
+
+.underline{
+    color: #0061FF;
+    text-decoration: underline;
+}
+
+/* debug */
+
+.debug{
+    padding: 25px;
+    border: 1px solid red;
+}
+
 
 
 /* containers */
@@ -58,6 +74,12 @@ a{
     float: right;
 }
 
+.clearfix{
+    content: "";
+    display: block;
+    clear: both;
+}
+
 /* col */
 
 .col-12{
@@ -78,6 +100,10 @@ a{
 
 .col-2{
     width: calc( (100% / 12 ) *2);
+}
+
+.col-3{
+    width: calc( (100% / 12 ) *3);
 }
 
 /* style header */
@@ -117,7 +143,7 @@ header nav ul{
     text-align: center;
     font-size: 14px;
     line-height: 25px;
-    transition: 510ms;
+    transition: 50ms;
 }
 
 .button:hover{
@@ -128,6 +154,13 @@ header nav ul{
     background-color: #0061FF;
     color: white;
 }
+
+.button--transparent{
+    background-color: transparent;
+    border: 1px solid black;
+
+}
+
 
 /* jumbotron style */
 
@@ -164,4 +197,241 @@ header nav ul{
     padding-top: 25px;
 }
 
-/* business */
+/* cards style */
+
+#business .row:first-child{
+    padding-top: 150px;
+}
+
+#business .row .col-12 h2{
+    font-size: 40px;
+}
+
+.cta-bill{
+    margin-bottom: 35px;
+}
+
+[class^=radiobutton-]{
+    font-size: 18px;
+    padding-top: 35px;
+    display: inline-block;
+}
+
+.radiobutton-mensile{
+    margin-left: 15px;
+}
+
+.plan{
+    border: 1px solid #aaa;
+    margin: 0 40px;
+}
+
+.plan_head{
+    border-bottom: 1px solid #aaa;
+    padding: 10px;
+    text-align: center;
+}
+
+.plan_body {
+    padding: 30px;
+}
+
+.plan_footer{
+    padding: 0px 30px 30px 30px;
+}
+
+.plan_body .plan--title{
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.plan_body .plan--price{
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.plan_body .plan--rate{
+    color: #777;
+}
+
+.plan_body .plan--description{
+    padding: 25px 0;
+}
+
+.plan_body .plan--description li{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.plan_body .plan--description li:last-child{
+    margin-bottom: 0;
+}
+
+.plan_body .button {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.plan_body span{
+    color: #0061FF;
+}
+
+.plan_body .alternative{
+    margin-top: 10px;
+}
+
+.trattino::after{
+    display: block;
+    content: "";
+    width: 80px;
+    text-align: left;
+    border: 0.5px solid #777;
+    margin-top: 35px;
+}
+
+.plan_footer ul li i{
+    color: #0061FF;
+}
+
+.plan_footer h3{
+    margin-bottom: 20px;
+}
+
+.plan_footer ul li{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.plan_footer ul li:last-child{
+    margin-bottom: 0;
+    padding-bottom: 50px;
+}
+
+.correction{
+    margin: 0 -40px;
+}
+
+/* Enterprise */
+
+.enterprise{
+    border: 1px solid #777;
+    margin-top: 35px;
+}
+
+.enterprise_head{
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 1px solid #777;
+}
+
+.enterprise_body{
+    padding: 25px;
+}
+
+.enterprise_body h3{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.enterprise_body h5{
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.enterprise_body a{
+    max-width: 300px;
+    min-width: auto;
+}
+
+
+/* Partners */
+
+#partner{
+    margin-top: 100px;
+}
+
+#partner .col-6:nth-child(2){
+    padding: 25px 50px;
+}
+
+#partner .col-6:nth-child(2) h3{
+    font-size: calc(2.5vw - 20px);
+    margin-bottom: 20px;
+}
+
+#partner .col-6:nth-child(2) p{
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+
+/* Operations */
+
+#operations .operation_card{
+    padding: 25px;
+}
+
+.operation_card h3{
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.operation_card figure{
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.operation_card figure img{
+    width: 85%;
+}
+
+#operations .row:first-child h3{
+    font-size: calc(3.2vw - 20px);
+    margin: 50px 0 25px 0;
+}
+
+/* Pre_FAQ */
+
+#pre_FAQ{
+    margin-top: 150px;
+}
+
+#pre_FAQ .col-8 h3{
+    font-size: calc(3.2vw - 20px);
+    margin-bottom: 40px;
+}
+
+#pre_FAQ .col-8 a{
+    margin-bottom: 40px;
+}
+
+#pre_FAQ figure img{
+    color: white;
+}
+
+
+
+#pre_FAQ .col-6{
+    background-color: rgb(241, 241, 241);
+    padding: 25px 30px;
+}
+
+#pre_FAQ .col-6 picture img{
+    width: 150px;
+}
+
+#pre_FAQ .col-6 p{
+    margin: 35px 0;
+}
+
+
+#pre_FAQ .col-6 p:last-child{
+    padding-bottom: 50px;
+}
+
+
+#preFAQ .container-fluid .col-3 .square{
+    width: 50px;
+    height: 50px;
+    background-color: lightpink;
+}
