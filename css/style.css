@@ -109,12 +109,13 @@ ul li{
 /* style header */
 
 section {
-    padding: 25px 15px;
+    padding: 25px 0;
 }
 
 
-header section{
+#header{
     background-color: #fff;
+    padding: 25px 15px;
 }
 
 header ul li{
@@ -405,12 +406,6 @@ header nav ul{
     margin-bottom: 40px;
 }
 
-#pre_FAQ figure img{
-    color: white;
-}
-
-
-
 #pre_FAQ .col-6{
     background-color: rgb(241, 241, 241);
     padding: 25px 30px;
@@ -426,13 +421,36 @@ header nav ul{
 
 
 #pre_FAQ .col-6 p:last-child{
-    padding-bottom: 50px;
+    padding-bottom: 45px;
 }
 
 
-#preFAQ .container-fluid .col-3 .square{
-    width: 50px;
-    height: 50px;
-    background-color: lightpink;
-    
+.img_wrapper{
+    height: 200px;
+    width: 200px;
+    background-color: #0061FF;
+
 }
+
+#pre_FAQ .img_wrapper figure img{
+     width: 50%;
+}
+
+#pre_FAQ .container-fluid .col-3{
+    position: relative;
+}
+
+#pre_FAQ .img_wrapper:nth-child(3){
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+#pre_FAQ .img_wrapper:nth-child(4){
+    position: absolute;
+    top: 50%;
+    right: 0%;
+}
+
+
+
