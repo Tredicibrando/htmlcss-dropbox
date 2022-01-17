@@ -286,8 +286,10 @@ header nav ul{
     content: "";
     width: 80px;
     text-align: left;
-    border: 0.5px solid #777;
+    height: 1px;
     margin-top: 35px;
+    margin-bottom: 35px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .plan_footer ul li i{
@@ -395,6 +397,7 @@ header nav ul{
 
 #pre_FAQ{
     margin-top: 150px;
+    padding: 0;
 }
 
 #pre_FAQ .col-8 h3{
@@ -426,30 +429,125 @@ header nav ul{
 
 
 .img_wrapper{
-    height: 200px;
-    width: 200px;
-    background-color: #0061FF;
-
-}
-
-#pre_FAQ .img_wrapper figure img{
-     width: 50%;
-}
-
-#pre_FAQ .container-fluid .col-3{
+    width: 100%;
     position: relative;
 }
 
-#pre_FAQ .img_wrapper:nth-child(3){
-    position: absolute;
-    top: 0%;
-    right: 0%;
+.img_wrapper figure{
+    width: 240px;
+    height: 200px;
+    background-color: coral;
 }
 
-#pre_FAQ .img_wrapper:nth-child(4){
+
+.img_wrapper .img_wrapper--dx{
+   position: absolute;
+   right: 0;
+   top: 0;
+}
+
+.img_wrapper .img_wrapper--sx .img_wrapper--dx{
+    position: absolute;
+    margin: 0 auto;
+}
+
+/* Team section */
+
+.team_section .col-side{
+    height: 30vw;
+    width: 30vw;
+}
+
+.team_section .col-center{
+    width: calc(100% - 30vw - 30vw);
+    min-height: 30vw;
+}
+
+.team-box-wrapper{
+    width: 15vw;
+    height: 15vw;
+    position: relative;
+    border: 10px solid transparent;
+    transition: 300ms ease-in-out;
+    float: left;
+}
+
+.team-box-wrapper:hover{
+    border: 10px solid rgba(255, 255, 255, 0.5);
+}
+
+.team-box-wrapper img{
+    width: 60%;
     position: absolute;
     top: 50%;
-    right: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(1);
+}
+
+.team_section .col-center{
+    background-color: #F5F5F5;
+    padding: 30px;
+}
+
+.team_section .col-center img{
+    width: 150px;
+}
+
+
+
+.team_section .col-center .col-center-text-wrapper p:first-child {
+    margin-bottom: 50px;
+}
+
+
+/* Team section square colors */
+
+.box--verdino{
+    background-color: #9FCA9A;
+}
+
+.box--magenta{
+    background-color: #65132B;
+}
+
+.box--azzurro{
+    background-color: #0087D3;
+}
+
+.box--giallo{
+    background-color: #FFD32A;
+}
+
+.box--rosso{
+    background-color: #E7171D;
+}
+
+.box--blu{
+    background-color: #092785;
+}
+
+/*Dropbox-company */
+
+#dropbox-company{
+    background-color: #ABC8E0;
+    padding: 0;
+}
+
+#dropbox-company .company-wrapper{
+    padding: 100px 0;
+}
+
+
+/* #dropbox-company .company-wrapper  .company-item{
+    padding: 50px;
+} */
+
+
+#dropbox-company .company-wrapper h4{
+    font-size: 2vw;
+    color: #5E1A31;
+    line-height: 2vw;
 }
 
 
